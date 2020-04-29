@@ -1,0 +1,6 @@
+1587722810410	Move 'index.jsp' to 'WEB-INF'
+1587722823193	Move 'index.jsp' to 'webapp'
+1587729374716	Delete element
+1587729449475	Delete element
+1587729526668	Delete element
+1587730083726	Extract interface 'UserService'

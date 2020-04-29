@@ -1,0 +1,5 @@
+package com.ims.ch33tz.repository;
+
+public interface UserRepository {
+
+}

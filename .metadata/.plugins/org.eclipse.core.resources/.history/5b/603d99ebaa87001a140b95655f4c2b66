@@ -1,0 +1,11 @@
+package com.ims.ch33tz.repository;
+
+import java.util.List;
+
+import com.ims.ch33tz.entity.User;
+
+public interface UserRepository {
+	
+	List<User> findAll();
+
+}

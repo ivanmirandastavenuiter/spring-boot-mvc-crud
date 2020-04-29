@@ -1,0 +1,9 @@
+package com.ims.ch33tz.repository;
+
+import java.util.List;
+
+public interface UserRepository {
+	
+	public List<User> findAll();
+
+}

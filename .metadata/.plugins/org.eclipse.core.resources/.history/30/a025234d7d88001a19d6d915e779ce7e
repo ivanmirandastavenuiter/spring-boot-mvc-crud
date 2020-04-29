@@ -1,0 +1,12 @@
+package com.ims.ch33tz.exception;
+
+import java.util.logging.Logger;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class GlobalExceptionHandlingController {
+	
+	private static final Logger logger = Logger.getLogger(GlobalExceptionHandlingController.class.getName());
+
+}

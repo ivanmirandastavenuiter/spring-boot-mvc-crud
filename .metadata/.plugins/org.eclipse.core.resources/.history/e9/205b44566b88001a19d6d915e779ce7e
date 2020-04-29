@@ -1,0 +1,9 @@
+#labels
+name=Name
+surname=Surname
+age=Age
+
+#validations
+NotEmpty.user.name=Name cannot be empty. 
+NotEmpty.user.surname=Surname cannot be empty. 
+NotEmpty.user.age=Age cannot be empty.

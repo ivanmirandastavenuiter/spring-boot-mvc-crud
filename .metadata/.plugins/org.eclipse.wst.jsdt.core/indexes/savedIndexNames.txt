@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\IMS\Desktop\HACKING\WEB-DEVELOPMENT\JAVA\CH33TZ-SPRING-BOOT-CRUD\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2695445127.index
+3724049559.index
+1628124563.index
+3299550196.index
+3713859498.index
+2505754854.index
+35439540.index

@@ -1,0 +1,68 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Monoton&family=Open+Sans+Condensed:wght@300&family=Righteous&display=swap" rel="stylesheet">
+<script
+    src="https://code.jquery.com/jquery-3.5.0.slim.js"
+    integrity="sha256-sCexhaKpAfuqulKjtSY7V9H7QT0TCN90H+Y5NlmqOUE="
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/465dd91009.js" crossorigin="anonymous"></script>
+<title>Update user</title>
+<style>
+
+	.error {
+		color: #ff0000;
+	}
+	
+	.errorblock {
+		color: #000;
+		background-color: #ffEEEE;
+		border: 3px solid #ff0000;
+		margin: 16px;
+		padding: 8px;
+	}
+
+</style>
+</head>
+<body>
+
+	<h1>CH33TZ</h1>
+
+	<form:form modelAttribute="user">
+	
+		<div class="form-input">
+			<spring:message code="name" />
+			<form:input path="name" value="${selectedUser.name}" />
+		</div>
+		
+		<form:errors path="name" cssClass="error" />
+		
+		<div class="form-input">
+			<spring:message code="surname" />
+			<form:input path="surname" value="${selectedUser.surname}" />
+		</div>
+		
+		<form:errors path="surname" cssClass="error" />
+		
+		<div class="form-input">
+			<spring:message code="age" />
+			<form:input path="age" value="${selectedUser.age}" />
+		</div>
+		
+		<form:errors path="age" cssClass="error" />
+	
+		<div class="form-input">
+			<input type="submit" value="Create user" />
+		</div>
+	
+	</form:form>
+
+</body>
+</html>

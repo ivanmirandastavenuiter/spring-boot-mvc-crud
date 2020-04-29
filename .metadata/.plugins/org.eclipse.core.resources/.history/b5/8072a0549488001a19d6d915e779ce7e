@@ -1,0 +1,13 @@
+package com.ims.ch33tz.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.ims.ch33tz.entity.User;
+
+public interface UserService {
+	public List<User> findAll();
+	public User save(User user);
+	public void delete(User user);
+	public Optional<User> findById(Long id);
+}

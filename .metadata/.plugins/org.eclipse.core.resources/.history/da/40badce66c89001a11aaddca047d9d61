@@ -1,0 +1,247 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Monoton&family=Open+Sans+Condensed:wght@300&family=Righteous&display=swap" rel="stylesheet">
+<script
+    src="https://code.jquery.com/jquery-3.5.0.slim.js"
+    integrity="sha256-sCexhaKpAfuqulKjtSY7V9H7QT0TCN90H+Y5NlmqOUE="
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/465dd91009.js" crossorigin="anonymous"></script>
+<title>Add user</title>
+<style>
+
+	.error {
+		color: #ff0000;
+	}
+	
+	.errorblock {
+		color: #000;
+		background-color: #ffEEEE;
+		border: 3px solid #ff0000;
+		margin: 16px;
+		padding: 8px;
+	}
+	
+	body {
+            margin: 0;
+            padding: 0;
+        }
+
+        div.main-container {
+            margin: 0;
+            padding: 0;
+        }
+
+        div.title-container {
+            margin: 50px auto;
+            width: 50%;
+            text-align: center;
+        }
+
+        h1.main-title {
+            font-family: 'Monoton', cursive;
+            color: #902828;
+            letter-spacing: 4px;
+            font-size: 4em;
+            margin: .1em;
+            padding: .1em;
+        }
+
+        div.operation-label {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 4em;
+            color: #fff;
+            width: 100%;
+            padding: 15px;
+            background: #ff9100;
+        }
+
+        div.form-container {
+            margin: 100px auto;
+            width: 50%;
+            background: #ffd8a6;
+            padding: 20px;
+            border-radius: 50px;
+        }
+
+        div.form-input-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-flow: row wrap;
+        }
+
+        div.form-input {
+            display: inline-flex;
+        }
+
+        div.form-input-submit input {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: 35px;
+            background: transparent;
+            font-family: 'Open Sans Condensed', sans-serif;
+            border: 1px solid #c06d00;
+            font-size: 1.1em;
+            padding: 7px;
+            color: #fff;
+            background: #ff9100;
+        }
+
+        div.form-input-submit input:hover,
+        div.form-input-submit input:focus {
+            outline: none;
+            border: 1px solid #7e4700;
+        }
+
+        div.form-input-submit input:active {
+            outline: none;
+            border: 2px solid #502d00;
+        }
+
+        div.form-input input {
+            padding: 5px;
+            border: 1px solid #000;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 1.2em;
+            background: none !important;
+            outline: none;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus,
+        input:-internal-autofill-selected {
+            -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+        ::placeholder { color: #000; }
+
+        div.arrow-container {
+            display: flex;
+        }
+
+        div.arrow-container i {
+            font-size: 5em;
+            color: #ff9100
+        }
+
+        div.arrow-container p {
+            padding: 13px;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        @media (max-width: 960px) {
+
+            div.form-input-container {
+                display: flex;
+                justify-content: center;
+                flex-flow: column wrap;
+            }
+
+            div.form-input {
+                display: block;
+                margin: 10px auto;
+            }
+        }
+	
+	
+
+</style>
+</head>
+<body>
+
+	<h1>CH33TZ</h1>
+
+	<form:form modelAttribute="user">
+	
+		<div class="form-input">
+			<form:label path="name">Name</form:label>
+			<form:input path="name" />
+		</div>
+		
+		<form:errors path="name" cssClass="error" />
+		
+		<div class="form-input">
+			<form:label path="surname">Surname</form:label>
+			<form:input path="surname" />
+		</div>
+		
+		<form:errors path="surname" cssClass="error" />
+		
+		<div class="form-input">
+			<form:label path="age">Age</form:label>
+			<form:input path="age" value="" />
+		</div>
+		
+		<form:errors path="age" cssClass="error" />
+	
+		<div class="form-input">
+			<input type="submit" value="Create user" />
+		</div>
+	
+	</form:form>
+	
+	 <div class="main-container">
+
+        <div class="title-container">
+            <h1 class="main-title">CH33TZ</h1>
+        </div>
+
+        <hr>
+
+        <div class="request-container">
+
+            <div class="operation-label">
+                CREATE
+            </div>
+
+            <div class="form-container">
+
+                <form:form>
+
+                    <div class="form-input-container">
+
+                        <div class="form-input">
+                            <input type="text" name="name" placeholder="Name" />
+                        </div>
+                        
+                        <div class="form-input">
+                            <input type="text" name="surname" placeholder="Surname" />
+                        </div>
+                        
+                        <div class="form-input">
+                            <input type="text" name="age" placeholder="Age" />
+                        </div>
+
+                    </div>
+                
+                    <div class="form-input-submit">
+                        <input type="submit" value="Create user" />
+                    </div>
+                
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="arrow-container">
+            <a href="${contextPath}"><i class="fas fa-arrow-left"></i></a>
+            <p>BACK</p>
+        </div>
+
+    </div>
+	
+	
+
+</body>
+</html>

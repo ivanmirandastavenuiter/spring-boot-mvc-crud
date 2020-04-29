@@ -1,0 +1,7 @@
+#labels
+name=Name
+surname=Surname
+age=Age
+
+#buttons
+save.changes=Save changes

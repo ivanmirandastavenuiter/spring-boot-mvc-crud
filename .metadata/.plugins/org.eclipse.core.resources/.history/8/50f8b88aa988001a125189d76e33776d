@@ -1,0 +1,13 @@
+#labels
+name=Name
+surname=Surname
+age=Age
+
+#validations
+NotEmpty.user.name=Name cannot be empty. 
+NotEmpty.user.surname=Surname cannot be empty. 
+Positive.user.age=Number has to be greater than zero
+NotNull.user.age=Age cannot be empty
+
+#custom error handling
+spring.mvc.throw-exception-if-no-handler-found=true

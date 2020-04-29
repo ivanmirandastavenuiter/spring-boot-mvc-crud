@@ -1,0 +1,25 @@
+package com.ims.ch33tz.exception;
+
+import java.util.Map;
+import java.util.logging.Logger;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ControllerAdvice
+public class GlobalExceptionHandlingController {
+	
+	private static final Logger logger = Logger.getLogger(GlobalExceptionHandlingController.class.getName());
+	
+	@ResponseStatus(HttpStatus.NOT_FOUND) 
+	@ExceptionHandler(EntityNotFoundException.class)
+	public String handleEntityNotFoundException(Map<String, Object> model, 
+												EntityNotFoundException e) {
+		logger.info(e.getMessage());
+		model.put("error", "An user with that id does not exist. Please, try a valid id");
+		return "entity-not-found";
+	}
+
+}

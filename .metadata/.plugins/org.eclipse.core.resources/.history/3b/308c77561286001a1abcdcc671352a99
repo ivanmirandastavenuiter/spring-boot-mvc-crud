@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ch33tz">
+        <property name="context-root" value="ch33tz"/>
+        <property name="java-output-path" value="/ch33tz/target/classes"/>
+    </wb-module>
+</project-modules>

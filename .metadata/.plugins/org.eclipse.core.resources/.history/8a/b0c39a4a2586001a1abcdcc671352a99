@@ -1,0 +1,6 @@
+package com.ims.ch33tz.repository;
+
+@Repository
+public class UserRepositoryImpl {
+
+}
