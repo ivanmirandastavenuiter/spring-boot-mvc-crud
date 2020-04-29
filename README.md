@@ -32,5 +32,21 @@ Delete and update actions are available accessing through the list of users.
 
 1. Index
 
-![register](https://github.com/ivanmirandastavenuiter/kontollarte-app-laravel-production/blob/master/KONTOLLARTE_DOCS/PICS/2.PNG)
+![index](https://github.com/ivanmirandastavenuiter/spring-boot-mvc-crud/blob/master/pics/1.png)
+
+2. Create
+
+![create](https://github.com/ivanmirandastavenuiter/spring-boot-mvc-crud/blob/master/pics/2.png)
+
+3. Validations
+
+![validations](https://github.com/ivanmirandastavenuiter/spring-boot-mvc-crud/blob/master/pics/3.png)
+
+4. List
+
+![list](https://github.com/ivanmirandastavenuiter/spring-boot-mvc-crud/blob/master/pics/4.png)
+
+5. Not found
+
+![not-found](https://github.com/ivanmirandastavenuiter/spring-boot-mvc-crud/blob/master/pics/4.png)
 
