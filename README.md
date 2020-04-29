@@ -48,5 +48,5 @@ Delete and update actions are available accessing through the list of users.
 
 5. Not found
 
-![not-found](https://github.com/ivanmirandastavenuiter/spring-boot-mvc-crud/blob/master/pics/4.png)
+![not-found](https://github.com/ivanmirandastavenuiter/spring-boot-mvc-crud/blob/master/pics/5.png)
 
